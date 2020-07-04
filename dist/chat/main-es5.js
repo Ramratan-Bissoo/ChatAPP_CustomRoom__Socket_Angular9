@@ -1102,7 +1102,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*#__PURE__*/
     __webpack_require__.n(socket_io_client__WEBPACK_IMPORTED_MODULE_3__);
 
-    var SERVER_URL = 'http://localhost:3000';
+    var SERVER_URL = 'https://tranquil-olympic-94261.herokuapp.com/';
 
     var SocketService =
     /*#__PURE__*/

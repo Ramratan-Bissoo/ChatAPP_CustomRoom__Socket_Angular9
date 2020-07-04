@@ -543,7 +543,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const SERVER_URL = 'http://localhost:3000';
+const SERVER_URL = 'https://tranquil-olympic-94261.herokuapp.com/';
 let SocketService = class SocketService {
     constructor() { }
     initSocket() {

@@ -1,5 +1,11 @@
 # Chat_APP with custom room image_upload
 
+![Welcome page](https://github.com/Ramratan-Bissoo/ChatAPP_CustomRoom__Socket_Angular9/blob/master/screenshot/welcome.PNG?raw=true)
+
+![Chat page](https://github.com/Ramratan-Bissoo/ChatAPP_CustomRoom__Socket_Angular9/blob/master/screenshot/chatroom.PNG?raw=true)
+
+# Live Demo <a href="https://angularchatapp.netlify.app">Chat Demo</a>
+
 # Installation
 
 1. Angular Front
@@ -12,8 +18,11 @@
     - cd server
     - npm install
     - npm start    // Run nodemon on localhost:3000 with socket server
-	
 
+	
+# change the server
+
+I have use heroku server so you will goto the src/app/service/socket.service.ts and change the const SERVER_URL = 'server url'
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
 
