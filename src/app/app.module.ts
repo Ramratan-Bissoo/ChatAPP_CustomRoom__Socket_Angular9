@@ -9,7 +9,8 @@ import { AppComponent } from './app.component';
 import { ChatComponent } from './chat/chat.component';
 
 // Services
-import { SocketService } from './services/socket.service'
+import { SocketService } from './services/socket.service';
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { SocketService } from './services/socket.service'
     FormsModule,
     HttpClientModule,
   ],
-  providers: [SocketService],
+  providers: [SocketService,{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

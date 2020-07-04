@@ -839,7 +839,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var _services_socket_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./services/socket.service */
-    "./src/app/services/socket.service.ts"); // Components
+    "./src/app/services/socket.service.ts");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js"); // Components
     // Services
 
 
@@ -850,7 +856,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _chat_chat_component__WEBPACK_IMPORTED_MODULE_7__["ChatComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"]],
-      providers: [_services_socket_service__WEBPACK_IMPORTED_MODULE_8__["SocketService"]],
+      providers: [_services_socket_service__WEBPACK_IMPORTED_MODULE_8__["SocketService"], {
+        provide: _angular_common__WEBPACK_IMPORTED_MODULE_9__["LocationStrategy"],
+        useClass: _angular_common__WEBPACK_IMPORTED_MODULE_9__["HashLocationStrategy"]
+      }],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
     })], AppModule);
     /***/
